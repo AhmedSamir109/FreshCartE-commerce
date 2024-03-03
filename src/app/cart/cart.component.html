@@ -1,5 +1,5 @@
 
-	<div class="mt-5 view-height" *ngIf="apiResponse else loading" >  <!-- *ngIf="isCartLoading else loading" -->
+	<div class="cart-wrap mt-5 pt-5 view-height" *ngIf="apiResponse else loading" >  <!-- *ngIf="isCartLoading else loading" -->
 		
 		
 		<div class="container" *ngIf="cartProducts.length >0 else emptyCart">
@@ -116,7 +116,7 @@
 	
 	<ng-template #emptyCart>
 		<div class="w-100 min-height d-flex flex-column justify-content-center align-items-center">
-			<p class="fs-1 fw-lighter text-center mb-4">Your Shopping Cart is Empty .. </p>
+			<h2 class="fs-1 fw-lighter text-center mb-4">Your Shopping Cart is Empty .. </h2>
 			
 			<button class="btn bg-main text-light px-4 w-50" routerLink="/home">Start Shopping</button>
 			
